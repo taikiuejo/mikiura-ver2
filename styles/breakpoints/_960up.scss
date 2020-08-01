@@ -1,0 +1,116 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.main-title {
+  font-size: 2.8em;
+  line-height: 1.5;
+}
+
+.sub-title {
+  font-size: 1.2em;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  &__inner {
+    height: $navHeight-pc;
+  }
+}
+
+.nav-menu-trigger {
+  &__icon {
+    & > span {
+      width: 40px;
+    }
+  }
+}
+
+// ナブメニュー（通常）
+.nav-menu {
+  &__info {
+    padding-top: 130px;
+    &__link {
+      font-size: 1.5em;
+      margin-bottom: 1.8em;
+    }
+  }
+  &__site-info {
+    justify-content: center;
+    padding-top: 1.5em;
+    &__li {
+      margin: 0 20px;
+    }
+    &__link {
+      font-size: 1.2em;
+    }
+  }
+}
+
+#main-visual {
+  padding-top: $navHeight-pc;
+  .video-container {
+    &__logo {
+      & > img {
+        transform: scale(0.7);
+      }
+    }
+    &__copyright {
+      left: 0;
+      font-size: 0.7em;
+    }
+  }
+}
+
+.travel-guide {
+  &__inner {
+    justify-content: space-between;
+  }
+  &__title,
+  &__lead {
+    flex-basis: 35%;
+  }
+  &__lead {
+    flex-basis: 60%;
+  }
+}
+
+.main-contents {
+  &__boxes {
+    &::after {
+      content: "";
+      display: block;
+      width: 32%;
+    }
+  }
+
+  &__box {
+    flex-basis: 32%;
+  }
+}
+
+.access {
+  max-width: 600px;
+  &__inner {
+    margin: 140px 0;
+  }
+  &__title {
+    margin-bottom: 2em;
+  }
+}
+
+.footer {
+  padding-top: 10%;
+  &__cultural-government {
+    padding: 50px 0 100px 0;
+    text-align: center;
+  }
+  &__logo {
+    padding: 135px 0;
+  }
+}

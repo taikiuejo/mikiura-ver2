@@ -1,0 +1,29 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+#main-visual {
+  .video-container {
+    &__logo{
+      & > img{
+        transform: scale(.5);
+      }
+    }
+    &__copyright{
+      left: -5%;
+    }
+  }
+}
+
+ .main-contents {
+  &__boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__box {
+    flex-basis: 47%;
+  }
+}
